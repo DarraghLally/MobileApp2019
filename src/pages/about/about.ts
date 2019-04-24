@@ -37,11 +37,11 @@ export class AboutPage {
   }//constructor
 
   ionViewDidLoad(){
-    this.geo.getCurrentPosition().then((resp) => {
-      this.lat = resp.coords.latitude;
-      this.long = resp.coords.longitude;
-      console.log("Lat: " + this.lat);
-      console.log("Lat: " + this.long);
+    this.geo.getCurrentPosition().then((data) => {
+      this.lat = data.coords.latitude;
+      this.long = data.coords.longitude;
+      //console.log("Lat: " + this.lat);
+      //console.log("Lat: " + this.long);
       this.getMyWeather();
       }).catch((error) => {
       console.log('Error getting location', error);

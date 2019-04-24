@@ -1,11 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Location
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  
+<ion-content padding class='backGround'>
+
+  <h2 class='centreLocal'>Latitude</h2>
+  <p><b>GPS:</b> {{lat}}</p>
+  <p><b>DMS:</b> {{finalLatDegree}} degs: {{finalLatMin}} mins: {{finalLatSec}} secs: {{compassHeadingLat}}</p>
+
+  <br>
+  <hr>
+
+  <h2 class='centreLocal'>Longitude</h2>
+  <p><b>GPS:</b> {{long}}</p>
+  <p><b>DMS:</b> {{finalLongDegree}} degs: {{finalLongMin}} mins: {{finalLongSec}} secs: {{compassHeadingLon}}</p>
+
+
 </ion-content>

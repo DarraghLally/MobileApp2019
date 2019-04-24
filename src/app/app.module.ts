@@ -44,7 +44,7 @@ import {HttpClientModule} from '@angular/common/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    OpenweatherProvider
+    OpenweatherProvider,
   ]
 })
 export class AppModule {}

@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
 //Imports
 import {Observable} from 'rxjs';
 
-
 @Injectable()
 export class OpenweatherProvider {
 

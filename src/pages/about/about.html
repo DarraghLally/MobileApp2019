@@ -1,11 +1,31 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Weather
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class='backGround'>
+  <br>
+  <h2 class='centreLocal'>{{city}}</h2>
+  <br>
+  <hr>
 
+  <h3>Description</h3>
+  <p>{{description}}</p>
+  <hr>
+
+  <h3>Temperature</h3>
+  <p>Celcius: {{returnCTemp}}</p>
+  <p>Farenheit: {{returnFTemp}}</p>
+  <hr>
+
+  <h3>Wind Speed</h3>
+  <p>{{windSpeed}} m/s</p>
+  <hr>
+  
+  <h3>Wind Direction</h3>
+  <p>{{windDirectCompass}}</p>
+  <hr>
 </ion-content>

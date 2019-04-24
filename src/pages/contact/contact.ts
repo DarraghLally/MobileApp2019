@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 //Imports
 import {Geolocation} from '@ionic-native/geolocation';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'page-contact',
@@ -13,6 +14,8 @@ export class ContactPage {
   //For lat and long
   lat: number;
   long: number;
+  saveLat: number;
+  saveLong: number;
 
   //For Latitude conversion to Degrees, mins, secs
   finalLatDegree: string;
@@ -34,7 +37,7 @@ export class ContactPage {
   finalLongSec: string;
   compassHeadingLon: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private geo: Geolocation) {   
+  constructor(public navCtrl: NavController, public navParams: NavParams, private geo: Geolocation, private storage: Storage) {   
   }//cons.
 
   ionViewDidLoad(){
@@ -42,11 +45,24 @@ export class ContactPage {
       this.lat = data.coords.latitude;
       this.long = data.coords.longitude;
       this.convertCoords();
-      //console.log("Lat: " + this.lat);
-      //console.log("Lat: " + this.long);
+      this.saveGPS();
       }).catch((error) => {
-      console.log('Error getting location', error);
+      console.log('Error getting location', error)
     });
+
+    //Get Last GPS Latitude
+    this.storage.get('lat').then((val) => {
+      this.saveLat = val;
+    });
+    //Get Last GPS Longitude
+    this.storage.get('long').then((val) => {
+      this.saveLong = val;
+    });
+  }
+
+  saveGPS(){
+    this.storage.set('lat', this.lat);
+    this.storage.set('long', this.long);
   }
 
   convertCoords(){
@@ -73,30 +89,28 @@ export class ContactPage {
         this.compassHeadingLat = "SOUTH";
     }
     
-
-
     //Longitude
     //Get Degrees
     this.finalLongDegree = Math.ceil(this.long);
-      console.log(this.finalLongDegree + " Degrees");
+      //console.log(this.finalLongDegree + " Degrees");
     //Get Mins
     this.longMin = this.long - Math.floor(this.long);
     this.returnLongMin = this.longMin * 60;
     this.finalLongMin = this.returnLongMin.toFixed(0);
-      console.log(this.finalLongMin + " Minutes");
+      //console.log(this.finalLongMin + " Minutes");
     //Get Seconds
     this.longSec = this.returnLongMin - Math.floor(this.returnLongMin);
     this.returnLongSec = this.longSec * 60;
     this.finalLongSec = this.returnLongSec.toFixed(2);
-      console.log(this.finalLongSec + " Seconds");
-      if (this.long > 0)
-      {
-         this.compassHeadingLon = "EAST";
-      }
-      else
-      {
-          this.compassHeadingLon = "WEST";
-      }
+      //console.log(this.finalLongSec + " Seconds");
+    if (this.long > 0)
+    {
+        this.compassHeadingLon = "EAST";
+    }
+    else
+    {
+        this.compassHeadingLon = "WEST";
+    }
     
   }
 

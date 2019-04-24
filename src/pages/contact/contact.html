@@ -8,6 +8,8 @@
 
 <ion-content padding class='backGround'>
 
+  <br>
+
   <h2 class='centreLocal'>Latitude</h2>
   <p><b>GPS:</b> {{lat}}</p>
   <p><b>DMS:</b> {{finalLatDegree}} degs: {{finalLatMin}} mins: {{finalLatSec}} secs: {{compassHeadingLat}}</p>
@@ -19,5 +21,11 @@
   <p><b>GPS:</b> {{long}}</p>
   <p><b>DMS:</b> {{finalLongDegree}} degs: {{finalLongMin}} mins: {{finalLongSec}} secs: {{compassHeadingLon}}</p>
 
+  <br>
+  <hr>
+  
+  <h2 class='centreLocal'>Last Known GPS</h2>
+  <p><b>GPS(Latitude):</b> {{saveLat}}</p>
+  <p><b>GPS(Longitude):</b> {{saveLong}}</p>
 
 </ion-content>

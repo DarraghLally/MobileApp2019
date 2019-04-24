@@ -16,6 +16,7 @@ import {Flashlight} from '@ionic-native/flashlight';
 import {Geolocation} from '@ionic-native/geolocation';
 import { OpenweatherProvider } from '../providers/openweather/openweather';
 import {HttpClientModule} from '@angular/common/http';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     HttpClientModule,
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

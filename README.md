@@ -25,8 +25,8 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   
   **1.** Current Location, top of page  
   **2.** Weather description  
-  **3.** Temprature: Both Celcius and Farenheit  
-  **4.** Wind spped: meters per second  
+  **3.** Temprature: Both Celsius and Farenheit  
+  **4.** Wind speed: meters per second  
   **5.** Wind direction: As a compass bearing  
   
   ### Location
@@ -36,7 +36,7 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   
   *Stackedoverflow, github, google, Ionics Documentation, Martin Kenirons, collegues - **Thanks!***
   
-  A spin off inspired by last semesters Mobile Application Project (written in C#, xmal). I enjoy the outdoors and I find the items I added useful.
+  A spin off inspired by last semesters Mobile Application Project (written in C#, xmal forms). I enjoy the outdoors and I find the items I added useful.
   
   
   

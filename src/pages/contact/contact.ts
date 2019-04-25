@@ -46,10 +46,13 @@ export class ContactPage {
       this.long = data.coords.longitude;
       this.convertCoords();
       this.saveGPS();
+      this.loadGPS();
       }).catch((error) => {
       console.log('Error getting location', error)
-    });
+    });    
+  }
 
+  loadGPS(){
     //Get Last GPS Latitude
     this.storage.get('lat').then((val) => {
       this.saveLat = val;

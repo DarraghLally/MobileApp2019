@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-//Imports
+//My Imports
 import {Geolocation} from '@ionic-native/geolocation';
 import {OpenweatherProvider} from '../../providers/openweather/openweather';
 
@@ -15,7 +15,7 @@ export class AboutPage {
   lat: number;
   long: number;
 
-  //From weather info from API
+  //For weather info from API
   description: string; 
   temp: number;
   windSpeed: number;

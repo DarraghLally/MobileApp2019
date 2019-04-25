@@ -10,6 +10,7 @@
 
   <br>
 
+  <!--Current Latitude, GPS & DMS-->
   <h2 class='centreLocal'>Latitude</h2>
   <p><b>GPS:</b> {{lat}}</p>
   <p><b>DMS:</b> {{finalLatDegree}} degs: {{finalLatMin}} mins: {{finalLatSec}} secs: {{compassHeadingLat}}</p>
@@ -17,6 +18,7 @@
   <br>
   <hr>
 
+  <!--Current Longitude, GPS & DMS-->
   <h2 class='centreLocal'>Longitude</h2>
   <p><b>GPS:</b> {{long}}</p>
   <p><b>DMS:</b> {{finalLongDegree}} degs: {{finalLongMin}} mins: {{finalLongSec}} secs: {{compassHeadingLon}}</p>
@@ -24,6 +26,7 @@
   <br>
   <hr>
   
+  <!--Last known, GPS - Making use of storage to auto save GPS coords used when app was last used-->
   <h2 class='centreLocal'>Last Known GPS</h2>
   <p><b>GPS(Latitude):</b> {{saveLat}}</p>
   <p><b>GPS(Longitude):</b> {{saveLong}}</p>

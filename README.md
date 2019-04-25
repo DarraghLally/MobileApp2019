@@ -5,7 +5,7 @@ My submission for our second year Mobile App Project as set by Dr. Martin Keniro
 
 ## Getting Started
 
-Assuming you have a recent version of node.js, Cordova and the Ionic Framework on your machine.
+Assuming you have a recent version of node.js, Cordova and the Ionic Framework on your machine.  
   **1.** Download Zip from Github - https://github.com/DarraghLally/MobileApp2019  
   **2.** Unzip into location of your choosing  
   **3.** Open file named: *g00220290* in command  
@@ -17,10 +17,10 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   
   ## Using
   
-  # Torch
+  ### Torch
   A simple one button (ON/OFF) page that makes use of a mobile device's flashlight hardware, **does not** work on broswer, must use inspect tool to see the call been made to cordova. I have commented out a debug console.log in the code if you wish to test further.
   
-  # Weather
+  ### Weather
   On this tab I am using information requested via a provider to OpenWeatherMap (https://openweathermap.org/). Using my free API key I am calling back some of the information provided in their JSON data.
   
   **1.** Current Location, top of page  
@@ -29,10 +29,10 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   **4.** Wind spped: meters per second  
   **5.** Wind direction: As a compass bearing  
   
-  # Location
+  ### Location
   This tab provides the user with useful location information in the form of both GPS coordinates and in the format of Degrees, Minutes, Seconds (DMS). It also stores the last known GPS coordinates for reference (Useful for tracking progress on a hike, sail etc)
   
-  # Acknowledgments
+  ## Acknowledgments
   
   *Stackedoverflow, github, google, Ionics Documentation, Martin Kenirons, collegues - **Thanks!***
   

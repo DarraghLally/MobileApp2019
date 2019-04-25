@@ -36,7 +36,7 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   
   *Stackedoverflow, github, google, Ionics Documentation, Martin Kenirons, collegues - **Thanks!***
   
-  A spin off inspired by last semesters Mobile Application Procect (written in C#, xmal). I enjoy the outdoors and I find the items I added useful.
+  A spin off inspired by last semesters Mobile Application Project (written in C#, xmal). I enjoy the outdoors and I find the items I added useful.
   
   
   

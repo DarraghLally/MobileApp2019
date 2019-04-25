@@ -11,19 +11,19 @@ import {Flashlight} from '@ionic-native/flashlight';
 export class HomePage {
 
   //Variables
-  status: string = "OFF";
+  status: string = "OFF"; //Initially Off, changes to On when active
 
   constructor(public navCtrl: NavController, private torch: Flashlight) {
   }
 
   toggleLight(){
-    if(this.torch.available){
-      this.torch.toggle();
+    //If light is off
+    if(this.torch.available){ 
+      //Switch on
       this.torch.switchOn();
-      status = "ON";
+      status = "ON"; //Change HTML when turned on
       //console.log("DEBUG: Light ON: if()");
     }else if(this.torch.isSwitchedOn()){
-      this.torch.toggle();
       this.torch.switchOff();
       status = "OFF";
       //console.log("DEBUG: Light OFF: else{}");

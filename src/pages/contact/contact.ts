@@ -41,10 +41,13 @@ export class ContactPage {
   }//cons.
 
   ionViewDidLoad(){
+    //Get GPS coords
     this.geo.getCurrentPosition().then((data) => {
-      this.lat = data.coords.latitude;
-      this.long = data.coords.longitude;
-      this.convertCoords();
+      this.lat = data.coords.latitude; //Latitude
+      this.long = data.coords.longitude; //longitude
+      
+      //Calling functions. See below
+      this.convertCoords(); 
       this.saveGPS();
       this.loadGPS();
       }).catch((error) => {
@@ -64,6 +67,7 @@ export class ContactPage {
   }
 
   saveGPS(){
+    //Save current latitude and longitude
     this.storage.set('lat', this.lat);
     this.storage.set('long', this.long);
   }

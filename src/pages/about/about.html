@@ -8,23 +8,28 @@
 
 <ion-content padding class='backGround'>
   <br>
+  <!--Display Location-->
   <h2 class='centreLocal'>{{city}}</h2>
   <br>
   <hr>
 
+  <!--Display Description-->
   <h3>Description</h3>
   <p>{{description}}</p>
   <hr>
 
+  <!--Display Temp-->
   <h3>Temperature</h3>
   <p>Celcius: {{returnCTemp}}</p>
   <p>Farenheit: {{returnFTemp}}</p>
   <hr>
 
+  <!--Display Wind Speed-->
   <h3>Wind Speed</h3>
   <p>{{windSpeed}} m/s</p>
   <hr>
   
+  <!--Display Wind Direction, Formatted from degree to compass bearing-->
   <h3>Wind Direction</h3>
   <p>{{windDirectCompass}}</p>
   <hr>

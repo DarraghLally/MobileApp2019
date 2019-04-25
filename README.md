@@ -6,12 +6,12 @@ My submission for our second year Mobile App Project as set by Dr. Martin Keniro
 ## Getting Started
 
 Assuming you have a recent version of node.js, Cordova and the Ionic Framework on your machine.
-  **1)** Download Zip from Github - https://github.com/DarraghLally/MobileApp2019
-  **2)** Unzip into location of your choosing
-  **3)** Open file named: *g00220290* in command
-    **i)** To view code (and asssuming you have VS Code IDE installed) run command: *code .*
-  **4)** To run application run command: *ionic serve*
-  **5)** Browser will open on localhost, I recommend using *localhost:8100/ionic-lab/* as the    URL
+  **1.** Download Zip from Github - https://github.com/DarraghLally/MobileApp2019
+  **2.** Unzip into location of your choosing
+  **3.** Open file named: *g00220290* in command
+  - To view code (and asssuming you have VS Code IDE installed) run command: *code .*
+  **4.** To run application run command: *ionic serve*
+  **5.** Browser will open on localhost, I recommend using *localhost:8100/ionic-lab/* as the    URL
   
   Application is now running and you are met with the home screen
   
@@ -23,11 +23,11 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   # Weather
   On this tab I am using information requested via a provider to OpenWeatherMap (https://openweathermap.org/). Using my free API key I am calling back some of the information provided in their JSON data.
   
-  **1)** Current Location, top of page
-  **2)** Weather description
-  **3)** Temprature: Both Celcius and Farenheit
-  **4)** Wind spped: meters per second
-  **5)** Wind direction: As a compass bearing
+  **1.** Current Location, top of page
+  **2.** Weather description
+  **3.** Temprature: Both Celcius and Farenheit
+  **4.** Wind spped: meters per second
+  **5.** Wind direction: As a compass bearing
   
   # Location
   This tab provides the user with useful location information in the form of both GPS coordinates and in the format of Degrees, Minutes, Seconds (DMS). It also stores the last known GPS coordinates for reference (Useful for tracking progress on a hike, sail etc)

@@ -38,5 +38,7 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   
   A spin off inspired by last semesters Mobile Application Project (written in C#, xmal forms). I enjoy the outdoors and I find the items I added useful.
   
+  **Wiki Here: https://github.com/DarraghLally/MobileApp2019/wiki**
+  
   
   

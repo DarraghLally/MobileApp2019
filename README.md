@@ -9,7 +9,7 @@ Assuming you have a recent version of node.js, Cordova and the Ionic Framework o
   **1.** Download Zip from Github - https://github.com/DarraghLally/MobileApp2019  
   **2.** Unzip into location of your choosing  
   **3.** Open file named: *g00220290* in command  
-  - To view code (and asssuming you have VS Code IDE installed) run command: *code .*  
+  To view code (and asssuming you have VS Code IDE installed) run command: *code .*  
   **4.** To run application run command: *ionic serve*  
   **5.** Browser will open on localhost, I recommend using *localhost:8100/ionic-lab/* as the URL  
     
